@@ -30,22 +30,22 @@ Users & Posts is a user-friendly dynamic web application that provides an intera
 
 To run this project locally, follow these steps:
 
-# 1. Clone the repository:
+### 1. Clone the repository:
 ```
 git clone https://github.com/YashShrivastava10/usersPosts.git
 ```
 
-# 2. Navigate to the project directory:
+### 2. Navigate to the project directory:
 ```
 cd usersPosts
 ```
 
-# 3. Install dependencies:
+### 3. Install dependencies:
 ```
 npm install
 ```
 
-# 4. Start the development server:
+### 4. Start the development server:
 ```
 npm start
 ```
@@ -65,4 +65,4 @@ If you have any questions, suggestions, or would like to report a bug, please fe
 - **GitHub:** [GitPal](https://github.com/YashShrivastava10)
 - **LinkedIn:** [linkedin.com/in/yash-shrivastava-7980911bb/](https://www.linkedin.com/in/yash-shrivastava-7980911bb/)
 
-Thank you for using React Memory Game!
+Thank you for using Users & Posts!
