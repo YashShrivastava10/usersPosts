@@ -6,20 +6,20 @@ import { Posts } from '../components/posts';
 
 const router = createBrowserRouter([
   {
-    path: "/usersPosts",
+    path: "/",
     element: <App />,
     errorElement: <App />,
     children: [
       {
-        path:"/usersPosts/users",
+        path:"/users",
         element: <Users />
       },
       {
-        path:"/usersPosts/posts",
+        path:"/posts",
         element: <Posts />
       }
     ]
   }
-])
+], {basename: "/usersPosts"})
 
 export default router;

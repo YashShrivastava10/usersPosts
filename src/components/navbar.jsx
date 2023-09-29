@@ -236,9 +236,9 @@ export const Navbar = () => {
     <div className='navbar'>
       {dialog()}
       <div className='navbar-route'>
-        <Link to="/usersPosts/posts" id="POST" className="links" onClick={() => handleRoute("POST")}>POSTS</Link>
+        <Link to="/posts" id="POST" className="links" onClick={() => handleRoute("POST")}>POSTS</Link>
         <span>|</span>
-        <Link to="/usersPosts/users" id="USER" className="links" onClick={() => handleRoute("USER")}>USERS</Link>
+        <Link to="/users" id="USER" className="links" onClick={() => handleRoute("USER")}>USERS</Link>
       </div>
       <div className='navbar-desc-button'>
         <div className='navbar-desc'>
