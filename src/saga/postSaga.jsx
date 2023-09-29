@@ -35,11 +35,11 @@ function* savePost(payload) {
   let method, url;
   if (type === "edit") {
     method = "PUT"
-    url = `https:/jsonplaceholder.typicode.com/posts/${payload.payload.id}`
+    url = `https://jsonplaceholder.typicode.com/posts/${payload.payload.id}`
   }
   else if (type === "create") {
     method = "POST"
-    url = "https:/jsonplaceholder.typicode.com/posts"
+    url = "https://jsonplaceholder.typicode.com/posts"
   }
   const posts = yield select((state) => state.post);
   const body = payload.payload.data

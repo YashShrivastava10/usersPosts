@@ -2,7 +2,7 @@ import { takeEvery, call, put, select } from "redux-saga/effects";
 import { getUserData } from "../store/slice/userSlice";
 
 function* getUser() {
-  const response = yield call(fetch, "https:/jsonplaceholder.typicode.com/users", {
+  const response = yield call(fetch, "https://jsonplaceholder.typicode.com/users", {
     mode: "cors",
     method: "GET",
     headers: { 'Content-Type': 'application/json' }
@@ -14,7 +14,7 @@ function* getUser() {
 function* deleteUser(id) {
   const users = yield select((state) => state.user);
   try{
-    const response = yield call(fetch, `https:/jsonplaceholder.typicode.com/posts/${id.payload}`, {
+    const response = yield call(fetch, `https://jsonplaceholder.typicode.com/posts/${id.payload}`, {
       mode: "cors",
       method: "DELETE",
       headers: { 'Content-Type': 'application/json' }
@@ -35,11 +35,11 @@ function* saveUser(payload) {
   let method, url;
   if (type === "edit") {
     method = "PUT"
-    url = `https:/jsonplaceholder.typicode.com/users/${payload.payload.id}`
+    url = `https://jsonplaceholder.typicode.com/users/${payload.payload.id}`
   }
   else if (type === "create") {
     method = "POST"
-    url = "https:/jsonplaceholder.typicode.com/users"
+    url = "https://jsonplaceholder.typicode.com/users"
   }
   const users = yield select((state) => state.user);
   const body = payload.payload.data
