@@ -2,7 +2,7 @@ import { takeEvery, call, put, select } from "redux-saga/effects";
 import { getPostData } from "../store/slice/postSlice";
 
 function* getPost() {
-  const response = yield call(fetch, "https:/jsonplaceholder.typicode.com/posts", {
+  const response = yield call(fetch, "https://jsonplaceholder.typicode.com/posts", {
     mode: "cors",
     method: "GET",
     headers: { 'Content-Type': 'application/json' }
@@ -14,7 +14,7 @@ function* getPost() {
 function *deletePost(id){
   const posts = yield select((state) => state.post);
   try{
-    const response = yield call(fetch, `https:/jsonplaceholder.typicode.com/posts/${id.payload}`, {
+    const response = yield call(fetch, `https://jsonplaceholder.typicode.com/posts/${id.payload}`, {
       mode: "cors",
       method: "DELETE",
       headers: { 'Content-Type': 'application/json' }
