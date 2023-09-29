@@ -108,12 +108,12 @@ tr, td{
   justify-content: center;
   align-items: center;
 }
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+.MuiPaper-root{
   background-color: #1E222E !important;
   border-radius: 30px !important;
   width: 65%;
   height: fit-content;
-  animation: popup 1s forwards ease;
+  animation: popup 1s forwards ease; 
 }
 .dialog{
   padding: 20px;
