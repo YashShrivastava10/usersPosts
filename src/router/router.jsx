@@ -6,16 +6,16 @@ import { Posts } from '../components/posts';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/usersPosts",
     element: <App />,
     errorElement: <App />,
     children: [
       {
-        path:"/users",
+        path:"/usersPosts/users",
         element: <Users />
       },
       {
-        path:"/posts",
+        path:"/usersPosts/posts",
         element: <Posts />
       }
     ]

@@ -11,7 +11,7 @@ function App() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   useEffect(() => {
-    navigate("/posts")
+    navigate("/usersPosts/posts")
     dispatch(fetchPostData())
     dispatch(fetchUserData())
   }, [])
